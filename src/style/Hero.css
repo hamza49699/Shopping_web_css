@@ -1,0 +1,85 @@
+/* General Styles for Hero Component */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6; /* Equivalent to bg-gray-100 */
+  }
+  
+  .hero-heading {
+    font-size: 4.5rem; /* Equivalent to text-7xl */
+    font-weight: 800; /* Equivalent to font-extrabold */
+    color: black;
+    margin-bottom: 4rem; /* Equivalent to mb-16 */
+    margin-top: 2.5rem; /* Equivalent to mt-10 */
+    text-align: center;
+  }
+  
+  .hero-box {
+    background-color: lightblue; /* Equivalent to bg-gray-300 */
+    padding: 3rem; /* Equivalent to p-12 */
+    border-radius: 0.75rem; /* Equivalent to rounded-lg */
+    width: 92%; /* Equivalent to w-11/12 */
+    max-width: 25rem; /* Equivalent to max-w-screen-lg */
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-box:hover {
+    background-color: white; /* Equivalent to hover:bg-white */
+  }
+  
+  .hero-description {
+    text-align: center;
+    font-size: 1.25rem; /* Equivalent to text-xl */
+    margin-top: 1rem; /* Equivalent to mt-4 */
+  }
+  
+  .hero-button-container {
+    margin-top: 1.5rem; /* Equivalent to mt-6 */
+  }
+  
+  .hero-button {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1.5rem; /* Equivalent to py-2 px-6 */
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    font-size: 1.25rem; /* Equivalent to text-xl */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 1.25rem; /* Equivalent to mb-5 */
+  }
+  
+  .hero-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 640px) {
+    /* Sm screen styles - sm:w-3/4 */
+    .hero-box {
+      width: 75%; 
+    }
+  }
+  
+  @media (min-width: 768px) {
+    /* Md screen styles - md:w-2/3 */
+    .hero-box {
+      width: 66.66%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* Lg screen styles - lg:w-1/2 */
+    .hero-box {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    /* Xl screen styles - xl:w-1/3 */
+    .hero-box {
+      width: 33.33%;
+    }
+  }
+  

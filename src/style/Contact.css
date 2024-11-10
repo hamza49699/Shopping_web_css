@@ -1,0 +1,125 @@
+/* Contact.css */
+
+/* Main container for the contact section */
+.contact-container {
+    width: 100%;
+  }
+  
+  /* Section styling */
+  .contact-section {
+    background-color: #ffffff; /* White background */
+    padding: 5rem 2rem; /* Vertical padding for section */
+  }
+  
+  /* Content container */
+  .contact-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+  }
+  
+  /* Grid layout for image and form sections */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .contact-image {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-left, .contact-right {
+    width: 100%;
+  }
+  
+  .contact-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Subscription form styles */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #333;
+  }
+  
+  .form-description {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    color: #6b7280; /* gray-600 */
+  }
+  
+  .form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form-input {
+    padding: 1rem;
+    width: 100%;
+    max-width: 350px;
+    font-size: 1rem;
+    border: 1px solid #d1d5db; /* gray-300 */
+    border-radius: 0.5rem;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .form-input:focus {
+    border-color: #000;
+  }
+  
+  .form-button {
+    background-color: #000;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #2d2d2d;
+  }
+  
+  /* Responsive Design for Large Screens */
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .contact-form {
+      text-align: left;
+      align-items: flex-start;
+    }
+  
+    .form {
+      flex-direction: row;
+      gap: 1rem;
+    }
+  
+    .form-input {
+      max-width: 250px;
+    }
+  }
+  
+  
